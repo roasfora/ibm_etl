@@ -6,21 +6,24 @@ Este projeto realiza a **extração, transformação e carga (ETL)** de dados fi
 
 ## 📁 Estrutura do Projeto
 
+
+```text
 projeto_etl_ibm/
 ├── data/
-│   ├── ibm_daily_raw.csv       # Dados brutos de cotações
-│   ├── ibm_overview_raw.csv    # Dados brutos corporativos
+│   ├── ibm_daily_raw.csv         # Dados brutos de cotações
+│   ├── ibm_overview_raw.csv      # Dados brutos corporativos
 │   └── processed/
-│       ├── dim_tempo.csv       # Dimensão temporal
-│       ├── dim_empresa.csv     # Dimensão empresa
-│       ├── dim_indicador.csv   # Dimensão indicadores
-│       ├── fact_cotacoes.csv   # Fato cotações
-│       └── fact_indicadores.csv# Fato indicadores
+│       ├── dim_tempo.csv         # Dimensão temporal
+│       ├── dim_empresa.csv       # Dimensão empresa
+│       ├── dim_indicador.csv     # Dimensão indicadores
+│       ├── fact_cotacoes.csv     # Fato cotações
+│       └── fact_indicadores.csv  # Fato indicadores
 ├── doc/
-│   └── ETL.png                 # Diagrama do processo
-├── data_extraction.py          # Script de extração
-├── data_transformation.py      # Script de transformação
-└── README.md
+│   └── ETL.png                   # Diagrama do processo
+├── data_extraction.py            # Script de extração
+├── data_transformation.py        # Script de transformação
+└── README.md                     # Documentação do projeto
+
 
 
 ---
