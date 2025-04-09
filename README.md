@@ -22,3 +22,5 @@ projeto_etl_ibm/
 ├── data_extraction.py            # Script de extração
 ├── data_transformation.py        # Script de transformação
 └── README.md                     # Documentação do projeto
+
+![ETL IBM Pipeline](https://raw.githubusercontent.com/roasfora/ibm_etl/master/doc/ETL.png)
