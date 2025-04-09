@@ -1,3 +1,6 @@
+![ETL IBM Pipeline](https://raw.githubusercontent.com/roasfora/ibm_etl/master/doc/ETL.png)
+
+
 # 🧠 Projeto ETL com Alpha Vantage - IBM
 
 Este projeto realiza a **extração, transformação e carga (ETL)** de dados financeiros da empresa **IBM**, utilizando a API da **Alpha Vantage**. O objetivo é estruturar esses dados em um **modelo dimensional**, ideal para análise em ferramentas de BI ou projetos de ciência de dados.
@@ -23,4 +26,4 @@ projeto_etl_ibm/
 ├── data_transformation.py        # Script de transformação
 └── README.md                     # Documentação do projeto
 
-![ETL IBM Pipeline](https://raw.githubusercontent.com/roasfora/ibm_etl/master/doc/ETL.png)
+
