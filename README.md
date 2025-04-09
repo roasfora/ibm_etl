@@ -6,7 +6,6 @@ Este projeto realiza a **extração, transformação e carga (ETL)** de dados fi
 
 ## 📁 Estrutura do Projeto
 
-
 ```text
 projeto_etl_ibm/
 ├── data/
@@ -23,34 +22,3 @@ projeto_etl_ibm/
 ├── data_extraction.py            # Script de extração
 ├── data_transformation.py        # Script de transformação
 └── README.md                     # Documentação do projeto
-
-
-
----
-
-## 🚀 Pipeline ETL
-
-### 🔹 1. Extração (`data_extraction.py`)
-- Consulta de preços diários da ação IBM via `TIME_SERIES_DAILY`
-- Consulta de dados fundamentais via `OVERVIEW`
-
-### 🔹 2. Transformação (`data_transformation.py`)
-Geração das seguintes tabelas:
-
-#### 📘 Dimensões:
-- `dim_tempo`: informações temporais (data, mês, ano, trimestre)
-- `dim_empresa`: dados estáticos da IBM (nome, setor, país, etc.)
-- `dim_indicador`: indicadores financeiros selecionados
-
-#### 📗 Fatos:
-- `fact_cotacoes`: preços de abertura, fechamento, volume diário
-- `fact_indicadores`: EPS, P/L, Dividendos, ROE, Market Cap
-
----
-
-## 🧪 Como Executar
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/projeto_etl_ibm.git
-cd projeto_etl_ibm
