@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ibm_test       # pode omitir se estiver usando o banco padrão
+    schema: public           # seu schema padrão no PostgreSQL
+    tables:
+      - name: fact_cotacoes
