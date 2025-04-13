@@ -1,0 +1,12 @@
+dbt_ibm:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: dpg-cvtpas3e5dus73acstag-a.oregon-postgres.render.com
+      user: ibm_test_user
+      password: 3xpk90tF3VvM0AaFjpnCOycw4O2Dtxh1
+      dbname: ibm_test
+      schema: public
+      port: 5432
+      threads: 1

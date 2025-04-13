@@ -46,23 +46,18 @@ def extract_company_overview(symbol):
     return pd.DataFrame([data])
 
 if __name__ == "__main__":
-    output_dir = r'C:\Users\isabe\Desktop\EDIT\EDIT\Data Engineering\projeto_etl_ibm\data'
-
-    # Cria diretório se não existir
+    output_dir = "data"
     os.makedirs(output_dir, exist_ok=True)
 
-    # Caminhos dos arquivos CSV
     daily_output_path = os.path.join(output_dir, 'ibm_daily_raw.csv')
     overview_output_path = os.path.join(output_dir, 'ibm_overview_raw.csv')
 
-    # Extração dos dados
     df_daily = extract_daily_data(SYMBOL)
     df_overview = extract_company_overview(SYMBOL)
 
-    # Salvando arquivos CSV
     df_daily.to_csv(daily_output_path, index=False)
     df_overview.to_csv(overview_output_path, index=False)
 
-    print("Extração finalizada com sucesso!\n"
-          f"Dados diários salvos em: {daily_output_path}\n"
-          f"Dados gerais salvos em: {overview_output_path}")
+    print(" Extração finalizada com sucesso!\n"
+          f" Dados diários salvos em: {daily_output_path}\n"
+          f" Dados gerais salvos em: {overview_output_path}")
