@@ -1,3 +1,5 @@
+![ETL Pipeline Diagram](doc/Pipeline.png)
+
 ##  IBM Financial ETL Pipeline
 
 A complete data engineering project that extracts, transforms, and loads IBM stock market and financial data using Python. It integrates with a PostgreSQL database and supports dbt for transformation and Power BI for visualization.
@@ -38,6 +40,7 @@ projeto_etl_ibm/
 - **Docker** for containerization
 - **dbt** for transformations and models
 - **Power BI** for data visualization
+- **Apache Airflow** (via Astronomer CLI)
 
 ---
 
