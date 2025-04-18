@@ -1,0 +1,6 @@
+pandas
+requests
+sqlalchemy
+python-dotenv>=0.21.0,<0.22.0
+psycopg2-binary
+astro-run-dag==0.2.7
